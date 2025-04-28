@@ -9,10 +9,11 @@ hubo = Robot()
 def turn_a():
     for i in range(2):
         hubo.turn_left()
+        time.sleep(0.5)
         global turnTime
         turnTime += 1
         hubo.turn_left()
-        time.sleep(0.1)
+        time.sleep(0.5)
         turnTime += 1
 
 def turn():
@@ -20,7 +21,7 @@ def turn():
     hubo.turn_left()
     global turnTime
     turnTime += 1
-    time.sleep(0.1)
+    time.sleep(0.5)
 
 for i in range(5):
     turn()
