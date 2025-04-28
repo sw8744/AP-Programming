@@ -10,4 +10,4 @@ canvas.add(sq)
 for i in range(360):
     sq.move(1, 0)
     sq.rotate(1)
-    time.sleep(0.01)
+    time.sleep(0.1)

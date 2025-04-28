@@ -1,4 +1,4 @@
-ss = 'CS101_Programming'
+ss = 'CS101_Prgramming'
 
 print(ss[0])
 print(ss[1:2])
