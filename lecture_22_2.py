@@ -24,6 +24,12 @@ class Card(object):
             article = "an "
         return article + str(self.face) + " of " + self.suit
 
+    def __eq__(self, rhs):
+        return self.face == rhs.face and self.suit == rhs.suit
+
+    def __ne__(self, rhs):
+        return not self == rhs
+
 class Deck(object):
     """A deck of cards."""
     def __init__(self):
